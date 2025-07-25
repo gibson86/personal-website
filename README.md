@@ -1,1 +1,6 @@
-# personal-website
+Web Hosting and Domain Name
+Domain Name: A domain name is the unique web address people type into their browser to access a website. It serves as the online identity of a person, brand, or organization. For example, a domain like www.collinsmunene.com could be registered to represent my personal website and make it easily accessible. Choosing a relevant, memorable domain name helps visitors find and remember the website. It can include your name, profession, or purpose of the site. Domain names are registered through domain registrars like Namecheap, GoDaddy, or Google Domains, and usually require annual renewal.
+
+
+Web Hosting: Web hosting is the service that stores all the files, images, and code that make up a website and delivers them to users when they visit the domain. Hosting providers run powerful servers that keep websites accessible on the internet 24/7. For this project, free hosting services like GitHub Pages, Netlify, or Vercel are ideal for static websites (those built with HTML, CSS, and JavaScript). These platforms allow me to upload my files and instantly make my website live without any cost. For more advanced or dynamic websites, paid hosting services (like Bluehost or Hostinger) offer more control, security, and features such as custom email addresses or server-side scripting.
+
