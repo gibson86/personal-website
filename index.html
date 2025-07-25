@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Collins Munene's services</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    .w3-row-padding img {margin-bottom: 12px}
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {width: 120px;background: #222;}
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {margin-left: 120px}
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+    </style>
+  </head>
+<body class="w3-black">
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-light-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-light-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT ME</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-light-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>MY WORK</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-z">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT ME</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">MY WORK</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black w3-text-light-blue w3" id="home"> 
+    <h1>
+        <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, Im Collins Munene ."]'>
+          <span class="wrap"></span>
+        </a>
+        <style>body {
+          background-color:#ce3635;
+          text-align: center;
+          color:#72e6f5;
+          padding-top:10em;
+        }
+        
+        * { color:#fff; text-decoration: none;}</style>
+        <script>var TxtType = function(el, toRotate, period) {
+          this.toRotate = toRotate;
+          this.el = el;
+          this.loopNum = 0;
+          this.period = parseInt(period, 10) || 2000;
+          this.txt = '';
+          this.tick();
+          this.isDeleting = false;
+      };
+    
+      TxtType.prototype.tick = function() {
+          var i = this.loopNum % this.toRotate.length;
+          var fullTxt = this.toRotate[i];
+    
+          if (this.isDeleting) {
+          this.txt = fullTxt.substring(0, this.txt.length - 1);
+          } else {
+          this.txt = fullTxt.substring(0, this.txt.length + 1);
+          }
+    
+          this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+    
+          var that = this;
+          var delta = 200 - Math.random() * 100;
+    
+          if (this.isDeleting) { delta /= 2; }
+    
+          if (!this.isDeleting && this.txt === fullTxt) {
+          delta = this.period;
+          this.isDeleting = true;
+          } else if (this.isDeleting && this.txt === '') {
+          this.isDeleting = false;
+          this.loopNum++;
+          delta = 500;
+          }
+    
+          setTimeout(function() {
+          that.tick();
+          }, delta);
+      };
+    
+      window.onload = function() {
+          var elements = document.getElementsByClassName('typewrite');
+          for (var i=0; i<elements.length; i++) {
+              var toRotate = elements[i].getAttribute('data-type');
+              var period = elements[i].getAttribute('data-period');
+              if (toRotate) {
+                new TxtType(elements[i], JSON.parse(toRotate), period);
+              }
+          }
+          // INJECT CSS
+          var css = document.createElement("style");
+          css.type = "text/css";
+          css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+          document.body.appendChild(css);
+      };
+    </script>
+      </h1>
+    <p>Software Engineer and Cyber security expert.</p>
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-black w3-padding-64" id="about">
+    <h2 class="w3-text-light-blue">About me</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>I'm Collins Munene Kithinji, a student at Zetech University. I'm currently pursuing Degree in Software Engineering. I can work in different fields such as : Database Management System, Web Development And Cyber security. I'm also passionate about technology and I'm always looking for new opportunities. I can work for an information technology company that other individuals or businesses use to manage their web and software needs. Or as part of an in-house IT Department at a larger company to maintain internet connectivity, Backup Information, troubleshooting problems, monitor firewalls to protect sensitive information.
+    </p>
+    <a href="CURRICULUM VITAE 5.docx" download="CURRICULUM VITAE 5.DOCX" class="w3-button w3-light-blue w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Resume
+    </a>
+    <h3 class="w3-padding-16 w3-text-light-blue">My Work</h3>
+    <p class="w3-wide">Cyber Security expert</p>
+    <div class="w3-dark-grey">
+      <div class="w3-container w3-center w3-padding-small w3-light-blue" style="width:95%">95%</div>
+    </div>
+    <p class="w3-wide">Web Developer</p>
+    <div class="w3-dark-grey">
+      <div class="w3-container w3-center w3-padding-small w3-light-blue" style="width:85%">85%</div>
+    </div>
+    <p class="w3-wide">Software Developer</p>
+    <div class="w3-dark-grey">
+      <div class="w3-container w3-center w3-padding-small w3-light-blue" style="width:80%">80%</div>
+    </div><br>
+    
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-black">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">5+</span><br>
+        Projects Done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">5+</span><br>
+        Happy Clients
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">10+</span><br>
+        Seminars
+      </div>
+    </div>
+
+  </div>
+    
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24 w3-text-light-blue">My Education</h3>
+    <p>2021-to date : Zetech University, Degree in Software Engineering.</p>
+    <p>2023-2024 : Moringa School, Nairobi</p>
+    <p>2017-2021 : Anestar High School, Nakuru.</p>
+    <p>2016-2008 : Olerai Primary School, Kajiado.</p>
+    <p>2008-2005 : Good Shepherd School, Nyeri.</p>
+  <!-- End About Section -->
+  </div>
+  
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-blue">My Skills</h2>
+      <div class="row">
+        
+        
+        
+            <p>
+        As a university student, I’m in a continuous process of learning, discovering, and developing new abilities that shape who I am—both academically and personally.
+        I take pride in being curious, proactive, and open-minded as I grow in my journey.
+    </p>
+
+    <h3>Technical Skills</h3>
+    <p>
+        My academic journey has introduced me to several practical and digital skills. Through coursework, self-learning, and projects, I’ve developed knowledge in:
+    </p>
+    <ul>
+        <li>Web Development: HTML, CSS, JavaScript</li>
+        <li>Programming: Python (and some C#/Java basics)</li>
+        <li>Version Control: Git and GitHub for collaborative work</li>
+        <li>Basic Graphic Design: Using Canva and Figma to create visual content</li>
+        <li>Document & Presentation Tools: MS Office Suite and Google Workspace</li>
+    </ul>
+
+    <h3> <span style="color: rgb(30, 173, 250);">Soft Skills</span></h3>
+    <p>
+        While technical abilities are essential, I also focus on developing soft skills that help me interact, lead, and contribute effectively in different environments:
+    </p>
+    <ul>
+        <li>Communication: Speaking clearly, writing well, and presenting confidently</li>
+        <li>Time Management: Balancing academics, projects, and personal growth</li>
+        <li>Teamwork: Working with classmates on group projects and learning to collaborate</li>
+        <li>Adaptability: Staying open to feedback and adjusting to new challenges</li>
+    </ul>
+
+    <h3>Personal Talents and Hobbies</h3>
+    <p>
+        Outside of academics, I enjoy nurturing my personal interests, which also contribute to my creativity and balance:
+    </p>
+    <ul>
+        <li>Creative Writing and Journaling</li>
+        <li>Photography and Visual Storytelling</li>
+        <li>Public Speaking and Debates</li>
+        <li>Volunteering and mentoring others in academic settings</li>
+    </ul>
+
+    <p>
+        I believe that learning never stops, and I’m excited to continue improving these skills as I move forward in my academic and career journey.
+    </p>
+          
+        
+      </div>
+      </div>
+              
+        </div>
+     
+        
+      </div>
+    </div>
+  
+  </div>
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-blue">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <footer class="w3-content w3-padding-64 w3-text-lihgt-blue w3-xlarge">
+        <a href="https://www.linkedin.com/your-profile-url" target="_blank" class="fa fa-linkedin w3-hover-opacity"></a>
+      <p><i class="fa fa-phone fa-fw w3-text-light-blue w3-xxlarge w3-margin-right"></i> Phone: +254 706994975</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-light-blue w3-xxlarge w3-margin-right"> </i> Email: collinsmunene3613@gmail.com</p>
+      <p><i class="fa fa-map-marker fa-fw w3-text-light-blue w3-xxlarge w3-margin-right"></i> Kajiado, Ongata Rongai</p>
+    </div>
+    <br>
+
+    <h3 class="w3-padding-24 w3-text-light-blue">Let's get in touch. send me a message:</h3>
+    <form id="contactForm">
+      <p><div class="wave-group">
+        <input class="input" id="name" type="text" required="" />
+        <span class="bar"></span>
+        <label class="label">
+          <span style="--index: 0" class="label-char">Name </span>
+        </label>
+        <style>.wave-group {
+          position: relative;
+        }
+        
+        .wave-group .input {
+          font-size: 16px;
+          padding: 10px 10px 10px 5px;
+          display: block;
+          width: 500px;
+          border: none;
+          border-bottom: 4px solid #515151;
+          background: transparent;
+        }
+        
+        .wave-group .input:focus {
+          outline: none;
+        }
+        
+        .wave-group .label {
+          color: #999;
+          font-size: 18px;
+          font-weight: normal;
+          position: absolute;
+          pointer-events: none;
+          left: 5px;
+          top: 10px;
+          display: flex;
+        }
+        
+        .wave-group .label-char {
+          transition: 0.2s ease all;
+          transition-delay: calc(var(--index) * 0.05s);
+        }
+        
+        .wave-group .input:focus ~ label .label-char,
+        .wave-group .input:valid ~ label .label-char {
+          transform: translateY(-20px);
+          font-size: 19px;
+          color: #3cbcf3;
+        }
+        
+        .wave-group .bar {
+          position: relative;
+          display: block;
+          width: 500px;
+        }
+        
+        .wave-group .bar:before,
+        .wave-group .bar:after {
+          content: "";
+          height: 2px;
+          width: 0;
+          bottom: 1px;
+          position: absolute;
+          background: #3cbcf3;
+          transition: 0.2s ease all;
+          -moz-transition: 0.2s ease all;
+          -webkit-transition: 0.2s ease all;
+        }
+        
+        .wave-group .bar:before {
+          left: 50%;
+        }
+        
+        .wave-group .bar:after {
+          right: 50%;
+        }
+        
+        .wave-group .input:focus ~ .bar:before,
+        .wave-group .input:focus ~ .bar:after {
+          width: 50%;
+        }
+        </style>
+      </div></p>
+      <p><div class="wave-group">
+        <input class="input" id="email" type="text" required="" />
+        <span class="bar"></span>
+        <label class="label">
+          <span style="--index: 0" class="label-char">Email</span>
+          
+        </label>
+        <style>.wave-group {
+          position: relative;
+        }
+        
+        .wave-group .input {
+          font-size: 16px;
+          padding: 10px 10px 10px 5px;
+          display: block;
+          width: 500px;
+          border: none;
+          border-bottom: 4px solid #515151;
+          background: transparent;
+        }
+        
+        .wave-group .input:focus {
+          outline: none;
+        }
+        
+        .wave-group .label {
+          color: #999;
+          font-size: 18px;
+          font-weight: normal;
+          position: absolute;
+          pointer-events: none;
+          left: 5px;
+          top: 10px;
+          display: flex;
+        }
+        
+        .wave-group .label-char {
+          transition: 0.2s ease all;
+          transition-delay: calc(var(--index) * 0.05s);
+        }
+        
+        .wave-group .input:focus ~ label .label-char,
+        .wave-group .input:valid ~ label .label-char {
+          transform: translateY(-20px);
+          font-size: 19px;
+          color: #3cbcf3;
+        }
+        
+        .wave-group .bar {
+          position: relative;
+          display: block;
+          width: 500px;
+        }
+        
+        .wave-group .bar:before,
+        .wave-group .bar:after {
+          content: "";
+          height: 2px;
+          width: 0;
+          bottom: 1px;
+          position: absolute;
+          background: #3cbcf3;
+          transition: 0.2s ease all;
+          -moz-transition: 0.2s ease all;
+          -webkit-transition: 0.2s ease all;
+        }
+        
+        .wave-group .bar:before {
+          left: 50%;
+        }
+        
+        .wave-group .bar:after {
+          right: 50%;
+        }
+        
+        .wave-group .input:focus ~ .bar:before,
+        .wave-group .input:focus ~ .bar:after {
+          width: 50%;
+        }
+        </style>
+      </div></p>
+      <p><div class="wave-group">
+        <input class="input" id="subject" type="text" required="" />
+        <span class="bar"></span>
+        <label class="label">
+          <span style="--index: 0" class="label-char">Subject</span>
+          
+        </label>
+        <style>.wave-group {
+          position: relative;
+        }
+        
+        .wave-group .input {
+          font-size: 16px;
+          padding: 10px 10px 10px 5px;
+          display: block;
+          width: 500px;
+          border: none;
+          border-bottom: 4px solid #515151;
+          background: transparent;
+        }
+        
+        .wave-group .input:focus {
+          outline: none;
+        }
+        
+        .wave-group .label {
+          color: #999;
+          font-size: 18px;
+          font-weight: normal;
+          position: absolute;
+          pointer-events: none;
+          left: 5px;
+          top: 10px;
+          display: flex;
+        }
+        
+        .wave-group .label-char {
+          transition: 0.2s ease all;
+          transition-delay: calc(var(--index) * 0.05s);
+        }
+        
+        .wave-group .input:focus ~ label .label-char,
+        .wave-group .input:valid ~ label .label-char {
+          transform: translateY(-20px);
+          font-size: 19px;
+          color: #3cbcf3;
+        }
+        
+        .wave-group .bar {
+          position: relative;
+          display: block;
+          width: 500px;
+        }
+        
+        .wave-group .bar:before,
+        .wave-group .bar:after {
+          content: "";
+          height: 2px;
+          width: 0;
+          bottom: 1px;
+          position: absolute;
+          background: #3cbcf3;
+          transition: 0.2s ease all;
+          -moz-transition: 0.2s ease all;
+          -webkit-transition: 0.2s ease all;
+        }
+        
+        .wave-group .bar:before {
+          left: 50%;
+        }
+        
+        .wave-group .bar:after {
+          right: 50%;
+        }
+        
+        .wave-group .input:focus ~ .bar:before,
+        .wave-group .input:focus ~ .bar:after {
+          width: 50%;
+        }
+        </style>
+      </div></p>
+      <p><div class="wave-group">
+        <input class="input" id="message" type="text" required="" />
+        <span class="bar"></span>
+        <label class="label">
+          <span style="--index: 0" class="label-char">message</span>
+        </label>
+        <style>.wave-group {
+          position: relative;
+        }
+        
+        .wave-group .input {
+          font-size: 16px;
+          padding: 10px 10px 10px 5px;
+          display: block;
+          width: 500px;
+          border: none;
+          border-bottom: 4px solid #515151;
+          background: transparent;
+        }
+        
+        .wave-group .input:focus {
+          outline: none;
+        }
+        
+        .wave-group .label {
+          color: #999;
+          font-size: 18px;
+          font-weight: normal;
+          position: absolute;
+          pointer-events: none;
+          left: 5px;
+          top: 10px;
+          display: flex;
+        }
+        
+        .wave-group .label-char {
+          transition: 0.2s ease all;
+          transition-delay: calc(var(--index) * 0.05s);
+        }
+        
+        .wave-group .input:focus ~ label .label-char,
+        .wave-group .input:valid ~ label .label-char {
+          transform: translateY(-20px);
+          font-size: 19px;
+          color: #3cbcf3;
+        }
+        
+        .wave-group .bar {
+          position: relative;
+          display: block;
+          width: 500px;
+        }
+        
+        .wave-group .bar:before,
+        .wave-group .bar:after {
+          content: "";
+          height: 2px;
+          width: 0;
+          bottom: 1px;
+          position: absolute;
+          background: #3cbcf3;
+          transition: 0.2s ease all;
+          -moz-transition: 0.2s ease all;
+          -webkit-transition: 0.2s ease all;
+        }
+        
+        .wave-group .bar:before {
+          left: 50%;
+        }
+        
+        .wave-group .bar:after {
+          right: 50%;
+        }
+        
+        .wave-group .input:focus ~ .bar:before,
+        .wave-group .input:focus ~ .bar:after {
+          width: 50%;
+        }
+        </style>
+      </div></p>
+    </form>
+        <button class="w3-button w3-light-blue w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  <a href="CURRICULUM VITAE 5.docx" download="CURRICULUM VITAE 5.DOCX" class="w3-button w3-light-blue w3-padding-large w3-section">
+    <i class="fa fa-download"></i> Download Resume
+  </a>
+  
+<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+ <p class="w3-xlarge">Thankyou</p>
+ <!-- End footer -->
+</footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+<script src="portf.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+</body>
+</html>
